@@ -28,11 +28,39 @@ $head-font-family:$font-family-third;
 
 .home__logo{
   filter: drop-shadow(0 0mm 1mm rgb(105,105,105));
+  width: 90%;
 }
 
 .home__subtitle{  
   color: white;
   filter: drop-shadow(0 0mm 1mm rgb(105,105,105));
   font-family: $font-family-third;
-  font-size: 2rem;
+  font-size: 1rem;
+}
+
+@media #{$breakpoints-medium} {
+  .home__subtitle{
+    font-size: 1.5rem;
+  }
+
+}
+
+@media #{$breakpoints-large} {
+  .home__logo{
+    width: 70%;
+  }
+
+  .home__subtitle{
+    font-size: 2rem;
+  }
+}
+
+@media #{$breakpoints-xlarge} {
+  .home__logo{
+    width: 70%;
+  }
+  
+  .home__subtitle{
+    font-size: 2rem;
+  }
 }
