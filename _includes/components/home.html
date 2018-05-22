@@ -1,0 +1,15 @@
+<section class="section home">
+  <div class="home__grid">
+    <div class="home__head">
+      <img class="home__logo" src="assets/images/meltdown-logos/meltdown-white.png" alt=""/>
+      <h1 class="home__subtitle">Official Site</h1>
+    </div>
+    <div class="home__menu">
+      {% for page in site.pages %}
+        {% if page.title %}
+        <a class="header__nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

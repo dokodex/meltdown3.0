@@ -1,0 +1,38 @@
+$home-max-width:$grid;
+$head-font-family:$font-family-third;
+
+.header{
+  display: none;
+}
+
+.home{
+  background: url('../images/hero.jpg') no-repeat;
+  background-size:auto auto;
+  height: 100vh;
+  margin: auto;
+  max-width: $home-max-width;
+  position: relative;
+  z-index: 5;
+}
+
+.home__grid{
+  display: grid;
+  grid-auto-rows: 60% 40%;
+  height: 100%;
+  text-align: center;
+}
+
+.home__head{
+  height: 100%;
+}
+
+.home__logo{
+  filter: drop-shadow(0 0mm 1mm rgb(105,105,105));
+}
+
+.home__subtitle{  
+  color: white;
+  filter: drop-shadow(0 0mm 1mm rgb(105,105,105));
+  font-family: $font-family-third;
+  font-size: 2rem;
+}

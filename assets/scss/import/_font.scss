@@ -1,0 +1,21 @@
+@font-face{
+  font-family: 'Arimo Regular';
+  font-style: normal;
+  src: url('../typography/Arimo-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'Montserrat Bold';
+  font-style: normal;
+  src: url('../typography/Montserrat-Bold.ttf');
+}
+
+@font-face{
+  font-family: 'Another Danger';
+  font-style: normal;
+  src: url('../typography/Another-Danger.ttf');
+}
+
+$font-family-first: 'Montserrat Bold', sans-serif;
+$font-family-second: 'Arimo Regular', sans-serif;
+$font-family-third: 'Another Danger', sans-serif;
