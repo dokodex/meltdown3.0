@@ -1,0 +1,97 @@
+$tour-dates-max-width:$grid;
+$tour-dates__title-font-family:$font-family-fifth;
+$tour-dates__title-font-color:$color-gray-table-head;
+$tour-dates__table--head-font-color:$color-gray-table-head;
+$tour-dates__table--body-font-color:$color-gray-table-head;
+$tour-dates__table--button-color:$color-gray-table-head;
+
+.tour-dates{
+  max-width: $tour-dates-max-width;
+  position: relative;
+  text-align: center;
+  z-index: 5;
+}
+
+.tour-dates__title{
+  font-family: $tour-dates__title-font-family;
+  color: $tour-dates__title-font-color;
+  font-size: 3rem;
+  font-style: bold;
+  padding: 5rem 2rem 5rem 2rem;
+}
+
+.tour-dates__table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: .53rem;
+  margin: auto;
+  width: 95%;
+}
+
+.tour-dates__table--row{
+  text-align: center;
+}
+
+.tour-dates__table--head{
+  border-bottom: 3px solid;
+  border-color: #dddddd;
+  color: $tour-dates__table--head-font-color;
+  font-weight: bold;
+  line-height: 2rem;
+}
+
+.tour-dates__table--body{
+  color: $tour-dates__table--body-font-color;
+  border-top: 1px solid;
+  border-color: #dddddd;
+  line-height: 3rem;
+}
+
+.tour-dates__bands{
+  display: none;
+}
+
+.tour-dates--link{
+  text-decoration: none;
+}
+
+.tour-dates--button:hover{
+  transform: scale(.8);
+}
+
+.tour-dates--button{
+  background-color: $tour-dates__table--button-color;
+  border-radius: 9px;
+  color: white;
+  height: 1.5rem;
+  width: auto;
+  height: auto;
+  transition: transform .2s;
+  transform: scale(.7);
+}
+
+.tour-dates__event, .tour-dates__tickets{
+  font-style: italic;
+}
+
+@media #{$breakpoints-medium} {
+  .tour-dates__title{
+    font-size: 5rem;
+  }
+
+  .tour-dates__bands{
+    display: inline;
+  }
+
+  .tour-dates__table{
+    font-size: 1rem;
+  }
+}
+
+@media #{$breakpoints-large} {
+
+}
+
+@media #{$breakpoints-xlarge} {
+
+}
