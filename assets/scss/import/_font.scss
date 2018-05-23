@@ -22,7 +22,15 @@
   src: url('../typography/earthorbiter.ttf');
 }
 
+@font-face{
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  src: url('../typography/BebasNeue-Regular.ttf');
+}
+
+
 $font-family-first: 'Montserrat Bold', sans-serif;
 $font-family-second: 'Arimo Regular', sans-serif;
 $font-family-third: 'Another Danger', sans-serif;
 $font-family-fourth: 'Earth Orbiter', sans-serif;
+$font-family-fifth: 'Bebas Neue', sans-serif;
