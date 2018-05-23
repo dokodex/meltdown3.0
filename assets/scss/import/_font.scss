@@ -16,6 +16,13 @@
   src: url('../typography/Another-Danger.ttf');
 }
 
+@font-face{
+  font-family: 'Earth Orbiter';
+  font-style: normal;
+  src: url('../typography/earthorbiter.ttf');
+}
+
 $font-family-first: 'Montserrat Bold', sans-serif;
 $font-family-second: 'Arimo Regular', sans-serif;
 $font-family-third: 'Another Danger', sans-serif;
+$font-family-fourth: 'Earth Orbiter', sans-serif;
