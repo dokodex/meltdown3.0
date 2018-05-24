@@ -1,0 +1,115 @@
+$music-max-width:grid;
+$music-album-title-font-family:$font-family-sixth;
+$music-album-hover-background-color:$color-gray-opacity;
+$icon-spotify-color:$color-green-spotify;
+$icon-youtube-color:$color-red-youtube;
+
+.music{
+  background-color: black;
+  max-width:$music-max-width;
+  position: relative;
+}
+
+.music__grid{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-row-gap:2px;
+  grid-column-gap:2px;
+}
+
+.music__album{
+  height: calc(100vw/2);
+  overflow: hidden;
+  text-align: center;
+}
+
+.music__album--ftdttg{
+  background: url(../images/music/back.jpg) no-repeat;
+  background-size: 100% auto;
+  grid-column: 1 / 3;
+}
+
+.music__grid--ftdttg{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.music__title{
+  color:white;
+  font-family: $music-album-title-font-family;
+  font-size: calc(100vw/40);
+  padding: calc(100vw/5) 1rem 0 1rem;
+}
+
+.music__listen {
+  padding-top: 5%;
+}
+
+.music__img-album{
+  filter:drop-shadow(-1px 1px 16px #8d8d8d);
+  height: calc(100vw/3.5)
+}
+
+.music__rrss__link:hover{
+  .icon{
+    transform: scale(1.1);
+  }
+}
+
+.music__rrss .icon{
+  filter:drop-shadow(-1px 1px 16px #8d8d8d);
+  height: calc(100vw/20);
+  padding: 0 1rem 0 1rem;
+  transition: transform .2s;
+}
+
+.music__rrss .icon--spotify{
+  fill:$icon-spotify-color;
+} 
+
+.music__rrss .icon--youtube{
+  fill:$icon-youtube-color;
+} 
+
+.music__album--irtdh{
+  background: url(../images/music/irtdh.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.music__album--oxymoron{
+  background: url(../images/music/oxymoron.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.music__album__link{
+  text-decoration: none;
+}
+
+.music__album__link:hover{
+  .music__background{
+    opacity:1;
+  }
+
+  .music__title--irtdh, .music__title--oxymoron{  
+    transform: translate(0,0);
+    visibility: visible;
+
+  }
+
+}
+
+.music__background{
+  background-color: $music-album-hover-background-color;
+  height: calc((100vw/2));
+  transition: visibility .2s, opacity .2s;
+  opacity: 0;
+  width: 100%;
+}
+
+.music__title--irtdh, .music__title--oxymoron{
+  visibility: hidden;
+  transform: translate(0,2rem);
+  transition: transform .2s, visibility .2s;
+}
+
